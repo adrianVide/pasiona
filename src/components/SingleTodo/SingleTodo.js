@@ -17,40 +17,56 @@ const SingleTodo = (props) => {
       });
       setTitle("");
       setBody("");
-      props.callBack()
+      props.callBack();
     } catch (error) {
       console.log(error);
     }
   }
 
   return (
-    <div key={todo.id}>
-      <h2>{todo.title}</h2>
-      <h2>{todo.body}</h2>
-      <div>
-        Update task:
-        <form
-          className="d-flex flex-column justify-content-center text-center align-items-center"
-          onSubmit={handleFormSubmit}
-        >
-          <label>Title:</label>
-          <input
-            type="text"
-            name="title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-          <label>Body:</label>
-          <input
-            type="text"
-            name="body"
-            value={body}
-            onChange={(e) => setBody(e.target.value)}
-          />
+    <div
+      key={todo.id}
+      class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4"
+    >
+      <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+        <img
+          class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+          src={`https://loremflickr.com/384/512/${todo.title}`}
+          alt=""
+          width="384"
+          height="512"
+        />
+        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+          <figcaption class="font-bold">
+            <div class="text-gray-800">{todo.title}</div>
+          </figcaption>
+          <blockquote>
+            <p class="text-lg font-medium text-gray-600">{todo.body}</p>
+          </blockquote>
+          
+          <form onSubmit={handleFormSubmit}>
+          <div>
+            <input
+              type="text"
+              placeholder="Title"
+              name="title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            /></div>
+            
+           
+            <input
+              type="text"
+              placeholder="Body"
+              name="body"
+              value={body}
+              onChange={(e) => setBody(e.target.value)}
+            />
 
-          <input type="submit" value="Modify" />
-        </form>
-      </div>
+            <input class="border-solid border-4 border-500" type="submit" value="Update" />
+          </form>
+        </div>
+      </figure>
     </div>
   );
 };

@@ -20,11 +20,12 @@ const Todo = () => {
   return (
     <>
       <AddTodo callBack={() => setReload(!reload)} />
-      <div>
-        {todos.map((todo) => (
+
+      {todos
+        .map((todo) => (
           <SingleTodo todo={todo} callBack={() => setReload(!reload)} />
-        ))}
-      </div>
+        ))
+        .reverse()}
     </>
   );
 };
