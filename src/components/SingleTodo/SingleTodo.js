@@ -36,7 +36,7 @@ const SingleTodo = (props) => {
           width="384"
           height="512"
         />
-        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+        <div class="pt-6 md:p-5 text-center md:text-left space-y-4">
           <figcaption class="font-bold">
             <div class="text-gray-800">{todo.title}</div>
           </figcaption>
@@ -47,6 +47,7 @@ const SingleTodo = (props) => {
           <form onSubmit={handleFormSubmit}>
           <div>
             <input
+             class="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1"
               type="text"
               placeholder="Title"
               name="title"
@@ -56,6 +57,7 @@ const SingleTodo = (props) => {
             
            
             <input
+             class="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1"
               type="text"
               placeholder="Body"
               name="body"
@@ -63,7 +65,7 @@ const SingleTodo = (props) => {
               onChange={(e) => setBody(e.target.value)}
             />
 
-            <input class="border-solid border-4 border-500" type="submit" value="Update" />
+            <input class="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1" type="submit" value="Update" />
           </form>
         </div>
       </figure>
