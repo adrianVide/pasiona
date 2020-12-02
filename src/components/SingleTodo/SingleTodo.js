@@ -65,7 +65,7 @@ const SingleTodo = (props) => {
               onChange={(e) => setBody(e.target.value)}
             />
 
-            <input class="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1" type="submit" value="Update" />
+            <input class="shadow appearance-none border rounded py-2 text-grey-darker mx-4 px-6" type="submit" value="Update" />
           </form>
         </div>
       </figure>

@@ -2,13 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './App';
 import Todo from './components/Todo/Todo';
-import AddTodo from './components/AddTodo/AddTodo';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <AddTodo /> */}
     <Todo />
   </React.StrictMode>,
   document.getElementById('root')

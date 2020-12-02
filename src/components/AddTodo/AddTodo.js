@@ -46,7 +46,7 @@ const AddTodo = (props) => {
               onChange={(e) => setBody(e.target.value)}
             />
 
-            <input class="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1" type="submit" value="Add Task" />
+            <input class="shadow appearance-none border rounded py-2 px-6 text-grey-darker m-1" type="submit" value="Add Task" />
           </form>
         </div>
 
