@@ -8,24 +8,24 @@ const Todo = () => {
   const [todos, setTodos] = useState([]);
   const [reload, setReload] = useState(false);
 
-  useEffect(async () => {
-    try {
+  useEffect(() => {
+    async function fetchTodos() {
       const result = await axios("http://localhost:3000/todos");
       setTodos(result.data);
-    } catch (error) {
-      console.log(error);
     }
+    fetchTodos();
   }, [reload]);
 
   return (
     <>
       <AddTodo callBack={() => setReload(!reload)} />
-
-      {todos
-        .map((todo) => (
-          <SingleTodo todo={todo} callBack={() => setReload(!reload)} />
-        ))
-        .reverse()}
+      <ul>
+        {todos
+          .map((todo) => (
+            <SingleTodo todo={todo} key={todo.id} callBack={() => setReload(!reload)} />
+          ))
+          .reverse()}
+      </ul>
     </>
   );
 };
