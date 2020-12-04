@@ -26,11 +26,6 @@
       "id": 31
     },
     {
-      "title": "Computer",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "id": 32
-    },
-    {
       "title": "Groceries",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "id": 33
@@ -99,11 +94,6 @@
       "title": "Cleaning",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "id": 46
-    },
-    {
-      "title": "Dream",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "id": 47
     },
     {
       "title": "Computer",

@@ -28,4 +28,4 @@ In the project directory, run:
 ### `npm install --only=dev`
 ### `npm test`
 
-That's pretty much it, enjoy.
+That's it, hope you like it :)
