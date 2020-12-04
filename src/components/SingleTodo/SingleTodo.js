@@ -24,7 +24,7 @@ const SingleTodo = (props) => {
   }
 
   return (
-    <li className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4">
+    <li data-testid='single-todo' className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4">
       <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
         <img
           className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"

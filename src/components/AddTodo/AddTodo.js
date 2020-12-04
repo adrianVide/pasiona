@@ -23,7 +23,7 @@ const AddTodo = (props) => {
   }
 
   return (
-        <div className="d-flex justify-content-center bg-gray-100 rounded-xl py-6">
+        <div data-testid="add-todo" className="d-flex justify-content-center bg-gray-100 rounded-xl py-6">
           <form
             className="d-flex flex-column justify-content-center text-center align-items-center"
             onSubmit={handleFormSubmit}

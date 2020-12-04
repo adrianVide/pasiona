@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="d-flex justify-content-center bg-gray-100 rounded-xl py-6"
+  data-testid="add-todo"
+>
+  <form
+    className="d-flex flex-column justify-content-center text-center align-items-center"
+    onSubmit={[Function]}
+  >
+    <h1
+      className="text-gray-800 font-bold "
+    >
+      Add a new Task
+    </h1>
+    <input
+      className="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1"
+      name="title"
+      onChange={[Function]}
+      placeholder="Title"
+      type="text"
+      value=""
+    />
+    <input
+      className="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1"
+      name="body"
+      onChange={[Function]}
+      placeholder="Body"
+      type="text"
+      value=""
+    />
+    <input
+      className="shadow appearance-none border rounded py-2 px-6 text-grey-darker m-1"
+      type="submit"
+      value="Add Task"
+    />
+  </form>
+</div>
+`;

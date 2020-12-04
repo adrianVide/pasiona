@@ -19,10 +19,14 @@ const Todo = () => {
   return (
     <>
       <AddTodo callBack={() => setReload(!reload)} />
-      <ul>
+      <ul data-testid="list-group">
         {todos
           .map((todo) => (
-            <SingleTodo todo={todo} key={todo.id} callBack={() => setReload(!reload)} />
+            <SingleTodo
+              todo={todo}
+              key={todo.id}
+              callBack={() => setReload(!reload)}
+            />
           ))
           .reverse()}
       </ul>

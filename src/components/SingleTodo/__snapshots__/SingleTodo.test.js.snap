@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<li
+  className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4"
+  data-testid="single-todo"
+>
+  <figure
+    className="md:flex bg-gray-100 rounded-xl p-8 md:p-0"
+  >
+    <img
+      alt=""
+      className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+      height="512"
+      src="https://loremflickr.com/384/512/Movie"
+      width="384"
+    />
+    <div
+      className="pt-6 md:p-5 text-center md:text-left space-y-4 w-full"
+    >
+      <figcaption
+        className="font-bold"
+      >
+        <div
+          className="text-gray-800"
+        >
+          Movie
+        </div>
+      </figcaption>
+      <blockquote>
+        <p
+          className="text-lg font-medium text-gray-600"
+        >
+          Movies move us like nothing else can, whether they're scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.
+        </p>
+      </blockquote>
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <input
+            className="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1"
+            name="title"
+            onChange={[Function]}
+            placeholder="Title"
+            type="text"
+            value=""
+          />
+        </div>
+        <input
+          className="shadow appearance-none border rounded py-2 px-3 text-grey-darker m-1"
+          name="body"
+          onChange={[Function]}
+          placeholder="Body"
+          type="text"
+          value=""
+        />
+        <input
+          className="shadow appearance-none border rounded py-2 text-grey-darker mx-4 px-6"
+          type="submit"
+          value="Update"
+        />
+      </form>
+    </div>
+  </figure>
+</li>
+`;
